@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sauces artisanales — Saveurs authentiques</title>
+  <meta name="description" content="Découvrez nos sauces artisanales, élaborées en petites quantités avec des ingrédients naturels. Commandes et dégustations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <!-- Hero -->
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">
+        <span class="logo-dot"></span>
+        <span class="brand-name">Sauces Artisanales</span>
+      </div>
+      <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Commander</button>
+    </nav>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1 class="display">
+          Des sauces <span class="gradient">authentiques</span> et <span class="gradient">généreuses</span>
+        </h1>
+        <p class="lead">
+          Préparées en petites quantités avec des ingrédients soigneusement sélectionnés. Trois recettes signatures pour sublimer chaque plat.
+        </p>
+        <div class="hero-actions">
+          <a href="#sauces" class="btn btn-primary">Découvrir nos sauces</a>
+          <a href="#contact" class="btn btn-ghost">Demander un devis</a>
+        </div>
+        <ul class="badges">
+          <li>Fait main</li>
+          <li>Ingrédients naturels</li>
+          <li>Production locale</li>
+        </ul>
+      </div>
+      <div class="hero-visual">
+        <!-- Espace visuel principal (optionnel) -->
+        <div class="hero-bottle hero-bottle-1"></div>
+        <div class="hero-bottle hero-bottle-2"></div>
+        <div class="hero-bottle hero-bottle-3"></div>
+        <div class="hero-glow"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section: Sauces -->
+  <main>
+    <section id="sauces" class="section">
+      <div class="section-head">
+        <h2>Nos trois sauces</h2>
+        <p>Chaque sauce a son caractère: douce, relevée ou fumée. Faites défiler et choisissez votre préférée.</p>
+      </div>
+
+      <div class="cards">
+        <!-- Carte Sauce 1 -->
+        <article class="card reveal">
+          <div class="card-media">
+            <!-- Place ici la photo PNG sans fond -->
+            <img src="assets/images/sauce1.jpg" alt="Sauce Douce — bouteille" width="480" height="480" loading="lazy" />
+            <div class="shadow"></div>
+          </div>
+          <div class="card-body">
+            <h3>Sauce Douce Miel & Ail</h3>
+            <p>Parfaite pour marinades et dips, avec une douceur équilibrée et une finale subtilement ailée.</p>
+            <ul class="tags">
+              <li>Sucrée-salée</li>
+              <li>Marinade</li>
+              <li>Dip</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Carte Sauce 2 -->
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="assets/images/sauce2.jpg" alt="Sauce Relevée — bouteille" width="480" height="480" loading="lazy" />
+            <div class="shadow"></div>
+          </div>
+          <div class="card-body">
+            <h3>Sauce Relevée Piment & Agrumes</h3>
+            <p>Une attaque fraîche d’agrumes suivie d’une chaleur maîtrisée : rehausse tacos, bowls et viandes grillées.</p>
+            <ul class="tags">
+              <li>Piquante</li>
+              <li>Agrumes</li>
+              <li>Grillades</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Carte Sauce 3 -->
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="assets/images/sauce3.jpg" alt="Sauce Fumée — bouteille" width="480" height="480" loading="lazy" />
+            <div class="shadow"></div>
+          </div>
+          <div class="card-body">
+            <h3>Sauce Fumée Érable & Poivre</h3>
+            <p>Notes boisées et touche d’érable pour un glaze irrésistible sur légumes rôtis, ribs et burgers.</p>
+            <ul class="tags">
+              <li>Fumée</li>
+              <li>Érable</li>
+              <li>Glaze</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section: À propos -->
+    <section class="section alt">
+      <div class="section-head">
+        <h2>Notre engagement</h2>
+        <p>Des recettes courtes, un goût franc, et une traçabilité claire sur chaque lot.</p>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <span class="icon">🌿</span>
+          <h4>Ingrédients bruts</h4>
+          <p>Sans additifs superflus, priorité au goût et à la saisonnalité.</p>
+        </div>
+        <div class="feature">
+          <span class="icon">🍳</span>
+          <h4>Petites quantités</h4>
+          <p>Contrôle qualité sur chaque fournée, du chaudron au bocal.</p>
+        </div>
+        <div class="feature">
+          <span class="icon">📦</span>
+          <h4>Circuits courts</h4>
+          <p>Approvisionnement local et conditionnement responsable.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Contact -->
+    <section id="contact" class="section contact">
+      <div class="section-head">
+        <h2>Contact & commandes</h2>
+        <p>Besoin d’un devis boutique, d’un événement, ou d’un pack dégustation ? Écris-nous.</p>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="grid">
+          <label>
+            <span>Nom</span>
+            <input type="text" name="name" placeholder="Jean Dupont" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="jean@example.com" required />
+          </label>
+        </div>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" placeholder="Bonjour, je souhaite..." required></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Envoyer</button>
+        <p class="form-note">En envoyant, tu acceptes notre politique de confidentialité.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Sauces Artisanales — Tous droits réservés.</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
