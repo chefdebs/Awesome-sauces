@@ -252,3 +252,23 @@ background:#ffffff12;border:1px solid #ffffff2a;border-radius:999px;
 }
 .social-btn .icon{width:20px;height:20px;display:block}
 .social-btn .icon path{fill:#e6ebf7 !important}
+
+/* 
+.footer{position:relative;z-index:10}
+.footer-socials{display:flex;justify-content:center;gap:12px;position:relative;z-index:11;background:#ffffff08} / debug, retirer après */
+.social-btn{
+width:42px;height:42px;min-width:42px;min-height:42px;
+display:inline-grid;place-items:center;
+background:#ffffff12;border:1px solid #ffffff2a;border-radius:999px;
+}
+.social-btn .icon{width:20px;height:20px;display:block}
+.social-btn .icon path{fill:#e6ebf7 !important}
+
+/* Option hover sans changer fill (compatible partout) */
+.social-btn:hover{
+transform: translateY(-2px);
+border-color:#ffffff38;
+background:#ffffff18;
+box-shadow: 0 12px 28px #00000080;
+filter: saturate(1.1) brightness(1.05);
+}
