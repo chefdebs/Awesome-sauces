@@ -169,3 +169,75 @@ input:focus, textarea:focus{ border-color:#ffffff44; box-shadow:0 0 0 6px #fffff
   .features{ grid-template-columns:1fr; }
   .contact-form .grid{ grid-template-columns:1fr; }
 }
+
+/* Accessibilité: élément texte caché visuellement mais lu par screen readers */
+.sr-only {
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;
+}
+
+.footer {
+  padding:26px; text-align:center; color:#91a0ba; border-top:1px solid #ffffff0e; margin-top:40px;
+}
+
+.footer-socials{
+  display:flex; justify-content:center; gap:12px; margin-bottom:14px;
+}
+
+.social-btn{
+  --size: 42px;
+  width: var(--size); height: var(--size);
+  display:inline-grid; place-items:center;
+  border-radius:999px;
+  background:#ffffff0c;
+  border:1px solid #ffffff1c;
+  color: var(--text);
+  text-decoration:none;
+  position:relative;
+  overflow:hidden;
+  transition: transform .15s ease, border-color .15s ease, background .15s ease, box-shadow .15s ease;
+  box-shadow: 0 6px 18px #00000050;
+}
+
+.social-btn .icon{
+  width:20px; height:20px; fill:#e6ebf7; transition: transform .15s ease, filter .15s ease;
+}
+
+.social-btn::after{
+  content:"";
+  position:absolute; inset:-1px;
+  background: radial-gradient(120px 120px at 50% 120%, #e9a53b22, transparent 70%);
+  opacity:.0; transition: opacity .2s ease;
+}
+
+.social-btn:hover{
+  transform: translateY(-2px);
+  border-color:#ffffff38;
+  background:#ffffff12;
+  box-shadow: 0 12px 28px #00000080;
+}
+.social-btn:hover::after{ opacity:.8 }
+.social-btn:hover .icon{ transform: translateY(-1px); filter: drop-shadow(0 2px 6px #00000060); }
+
+/* Teintes spécifiques */
+.social-btn.ig{
+  background: linear-gradient(180deg, #ffffff10, #ffffff08);
+  border-color:#ffffff22;
+}
+.social-btn.ig:hover .icon{
+  fill: #ffb86b; 
+}
+
+.social-btn.tk{
+  background: linear-gradient(180deg, #ffffff10, #ffffff08);
+  border-color:#ffffff22;
+}
+.social-btn.tk:hover .icon{
+  fill: #25F4EE;
+}
+
+/* Mode compact si très petit écran */
+@media (max-width:420px){
+  .footer-socials{ gap:10px }
+  .social-btn{ --size: 38px }
+  .social-btn .icon{ width:18px; height:18px }
+}
