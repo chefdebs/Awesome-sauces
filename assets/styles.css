@@ -241,3 +241,14 @@ input:focus, textarea:focus{ border-color:#ffffff44; box-shadow:0 0 0 6px #fffff
   .social-btn{ --size: 38px }
   .social-btn .icon{ width:18px; height:18px }
 }
+
+/* Footer socials hardening */
+.footer{position:relative;z-index:10}
+.footer-socials{display:flex;justify-content:center;gap:12px;position:relative;z-index:11}
+.social-btn{
+width:42px;height:42px;min-width:42px;min-height:42px;
+display:inline-grid;place-items:center;
+background:#ffffff12;border:1px solid #ffffff2a;border-radius:999px;
+}
+.social-btn .icon{width:20px;height:20px;display:block}
+.social-btn .icon path{fill:#e6ebf7 !important}
